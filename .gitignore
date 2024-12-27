@@ -1,8 +1,0 @@
-.env
-.venv
-.venv-3.12
-venv-3.12/
-__pycache__/
-.vscode
-vscode/
-.gitignore
