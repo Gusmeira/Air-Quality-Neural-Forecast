@@ -1,8 +1,14 @@
-.env
-.venv
-.venv-3.12
+# Python virtual environments
+venv/
+.venv/
+env/
+.env/
 venv-3.12/
+.venv-3.12/
+
+# Python cache
 __pycache__/
-.vscode
-vscode/
-.gitignore
+*.py[cod]
+
+# VSCode settings
+.vscode/
