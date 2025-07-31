@@ -4,7 +4,7 @@ import numpy as np
 
 
 
-ponte = pd.read_excel(r'Data\marg.tietê-ponte-dos remédios, são paulo, brazil-air-quality.xlsx')
+ponte = pd.read_excel(r'marg.tietê-ponte-dos remédios, são paulo, brazil-air-quality.xlsx')
 ponte['date'] = pd.to_datetime(ponte['date'], format="%d/%m/%Y")
 ponte = ponte.fillna(np.nan)
 
@@ -18,12 +18,12 @@ ponte['no2'] = pd.to_numeric(ponte['no2'], errors='coerce')
 ponte['so2'] = pd.to_numeric(ponte['so2'], errors='coerce')
 ponte['co'] = pd.to_numeric(ponte['co'], errors='coerce')
 
-ponte.to_pickle(r'Data\Data_Ponte_dos_Remedios.pkl')
+ponte.to_pickle(r'Data_Ponte_dos_Remedios.pkl')
 
 
 
 
-guarulhos = pd.read_excel(r'Data\guarulhos-paço-municipal, são paulo, brazil-air-quality.xlsx')
+guarulhos = pd.read_excel(r'guarulhos-paço-municipal, são paulo, brazil-air-quality.xlsx')
 guarulhos['date'] = pd.to_datetime(guarulhos['date'], format="%d/%m/%Y")
 guarulhos = guarulhos.fillna(np.nan)
 
@@ -37,4 +37,4 @@ guarulhos['no2'] = pd.to_numeric(guarulhos['no2'], errors='coerce')
 guarulhos['so2'] = pd.to_numeric(guarulhos['so2'], errors='coerce')
 guarulhos['co'] = pd.to_numeric(guarulhos['co'], errors='coerce')
 
-guarulhos.to_pickle(r'Data\Data_Guarulhos.pkl')
+guarulhos.to_pickle(r'Data_Guarulhos.pkl')
