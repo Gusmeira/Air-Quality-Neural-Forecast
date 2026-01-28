@@ -12,3 +12,7 @@ __pycache__/
 
 # VSCode settings
 .vscode/
+
+# Raw bases
+Data/CAMS/raw/EAC4/
+Data/CAMS/raw/ERA5/
