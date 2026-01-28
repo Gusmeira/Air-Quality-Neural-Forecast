@@ -14,5 +14,5 @@ __pycache__/
 .vscode/
 
 # Raw bases
-Data/CAMS/raw/EAC4/
-Data/CAMS/raw/ERA5/
+Data/CAMS/raw
+Data/CAMS/processed/
